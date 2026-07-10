@@ -4,7 +4,7 @@
     "https://etzhayyim.com/ns/actor-manifest"
   ],
   "@type": "ActorManifest",
-  "id": "did:web:narashi.etzhayyim.com",
+  "id": "did:web:etzhayyim.com:actor:narashi",
   "name": "narashi",
   "displayName": "均 — Global Inequality Observation",
   "displayNameJa": "均",

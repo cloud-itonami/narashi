@@ -1,6 +1,6 @@
 # narashi 均 — global-inequality observation
 
-**Tier-B actor · R0 design-only · ADR-2607101800 · `did:web:narashi.etzhayyim.com`.**
+**Tier-B actor · R0 design-only · ADR-2607101800 · `did:web:etzhayyim.com:actor:narashi`.**
 
 narashi reads the economic-inequality indicators the World Bank, the UN Statistics Division, and Our
 World in Data have **already published** — Gini coefficient, poverty headcount ratio, income share by

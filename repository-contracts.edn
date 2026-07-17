@@ -6,4 +6,5 @@
   :repository/legacy-path "20-actors/narashi"
   :repository/runtime :babashka
   :repository/test-command "bb test"
+  :repository/external-wire-formats #{:did-json}
   :repository/external-dependencies []}]

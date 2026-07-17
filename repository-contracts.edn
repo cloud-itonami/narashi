@@ -1,0 +1,9 @@
+[{:repository/name "com-etzhayyim-narashi"
+  :repository/category :actor
+  :repository/source-format :edn
+  :repository/authoritative true
+  :repository/west-path "orgs/etzhayyim/com-etzhayyim-narashi"
+  :repository/legacy-path "20-actors/narashi"
+  :repository/runtime :babashka
+  :repository/test-command "bb test"
+  :repository/external-dependencies []}]

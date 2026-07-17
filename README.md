@@ -42,20 +42,22 @@ mechanism (N1) — that role belongs solely to the Liberation Ladder, for adhere
 ## Layout
 
 ```
-manifest.jsonld                  actor blueprint + DID
-CLAUDE.md                        agent reference (hard rules, vocabulary, cells)
-methods/test_charter_gates.cljc  constitutional-gate conformance test
-run_tests.clj                    bb test runner
-kotoba.app.edn                   KOTOBA Mesh deploy manifest
+manifest.edn                              canonical actor blueprint + DID
+lex/*.edn                                canonical actor lexicons
+src/narashi/                             actor implementation
+test/narashi/                            standalone conformance tests
+repository-contracts.edn                 west/repository ownership contract
+run_tests.clj                            bb test runner
+kotoba.app.edn                           KOTOBA Mesh deploy manifest
 ```
 
-Lexicons (`com.etzhayyim.narashi.*`) live in `etzhayyim/root`:
-`00-contracts/lexicons/com/etzhayyim/narashi/`.
+Lexicons (`com.etzhayyim.narashi.*`) are owned by this repository under `lex/`.
+The EDN files are authoritative; Markdown only describes how to find them.
 
 ## Run
 
 ```bash
-bb run_tests.clj
+bb test
 ```
 
 **R0 design-only.** All 3 cells (`metric_ingest`, `cross_reference`, `narrative`) raise on first

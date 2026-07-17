@@ -51,7 +51,7 @@ country-ranking tool.
 
 ## Vocabulary
 
-`00-contracts/lexicons/com/etzhayyim/narashi/` (in `etzhayyim/root`):
+Canonical lexicons are repository-local under `lex/`:
 - `metricObservation` — one `(indicator, jurisdiction, period, value, sourceRecordCids[], methodNoteCid)`
   fact. `indicator` ∈ `{gini, poverty-headcount-ratio-international, poverty-headcount-ratio-national,
   income-share-bottom40, income-share-top10, sdg10-shared-prosperity-premium}`.
@@ -72,12 +72,14 @@ country-ranking tool.
 **R0 status**: Scaffold only. No live ingest, no live actuation.
 
 ```bash
-bb run_tests.clj
+bb test
 ```
 
 ## Related Files
 
-- `manifest.jsonld` — DID + cell registry + gates G1–G9 + non-goals N1–N8
+- `manifest.edn` — canonical DID + cell registry + gates G1–G9 + non-goals N1–N8
+- `lex/*.edn` — canonical actor lexicons
+- `repository-contracts.edn` — repository ownership and west path contract
 - `/90-docs/adr/2607101800-narashi-global-inequality-observation-tier-b-actor-r0.md` — Master ADR
   (in `etzhayyim/root`)
 - `/90-docs/adr/2605261000-labor-liberation-transition-mechanism.md` — Liberation Ladder (the N1

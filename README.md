@@ -47,7 +47,7 @@ lex/*.edn                                canonical actor lexicons
 src/narashi/                             actor implementation
 test/narashi/                            standalone conformance tests
 repository-contracts.edn                 west/repository ownership contract
-run_tests.clj                            bb test runner
+run_tests.clj                            standalone test runner
 kotoba.app.edn                           KOTOBA Mesh deploy manifest
 ```
 
@@ -57,8 +57,12 @@ The EDN files are authoritative; Markdown only describes how to find them.
 ## Run
 
 ```bash
-bb test
+nbb scripts/run-task.cljs test
 ```
+
+(`bb test` until 2026-07-17; babashka was retired as this workspace's script
+host by ADR-2607173000. The task is in `scripts/tasks.edn` — 16 tests /
+121 assertions, 0 failures, measured 2026-08-13.)
 
 **R0 design-only.** All 3 cells (`metric_ingest`, `cross_reference`, `narrative`) raise on first
 invocation until Council ratification (ADR-2607101800 §7).

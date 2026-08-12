@@ -5,7 +5,7 @@
 
 ## Identity
 
-- **DID**: `did:web:etzhayyim.com:actor:narashi` (RID `rad:bafkreiesq7hilvsa2nlth7snkzrnwqkrrjgv6dx4dmnr77prxfmlacojs4`, published via `bb actor:publish narashi --apply`, ADR-2606231200)
+- **DID**: `did:web:etzhayyim.com:actor:narashi` (RID `rad:bafkreiesq7hilvsa2nlth7snkzrnwqkrrjgv6dx4dmnr77prxfmlacojs4`, published via `nbb scripts/run-task.cljs actor:publish narashi --apply` in etzhayyim/root, ADR-2606231200)
 - **Glyph**: 均 — *level / equal / average*. Measures the degree of unevenness; does not itself level
   anything (same neutral-measurement register as kanae's 鼎の軽重を問う — "weighing," not "judging").
 - **Role**: the inequality-*outcome* sibling of `kanae` (which tracks fiscal *flow*). Reads kanae's
@@ -72,7 +72,7 @@ Canonical lexicons are repository-local under `lex/`:
 **R0 status**: Scaffold only. No live ingest, no live actuation.
 
 ```bash
-bb test
+nbb scripts/run-task.cljs test
 ```
 
 ## Related Files

@@ -7,7 +7,7 @@
   own canonical EDN documents (manifest.edn + lex/*.edn) — no
   real country / personal / financial data is read or asserted."
   (:require [clojure.test :refer [deftest is run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.edn :as edn]))
 
 (def ^:private here (.getParentFile (java.io.File. ^String *file*)))     ;; methods/
@@ -101,7 +101,7 @@
 
 (deftest test-g4-no-merit-or-verdict-field-anywhere
   (doseq [lname all-lexicon-names]
-    (let [ks (set (map (comp str/lower-case name) (property-keys (lex lname))))]
+    (let [ks (set (map (comp str/lower name) (property-keys (lex lname))))]
       (doseq [bad ["verdict" "score" "ranking" "rank" "rating" "blame" "merit"]]
         (is (not (contains? ks bad))
             (str "G4: " lname " must not carry a '" bad "' field (narashi is non-adjudicating)"))))))
@@ -150,7 +150,7 @@
 
 (deftest test-g9-aggregate-only-no-individual-level-fields
   (doseq [lname all-lexicon-names]
-    (let [ks (set (map (comp str/lower-case name) (property-keys (lex lname))))]
+    (let [ks (set (map (comp str/lower name) (property-keys (lex lname))))]
       (doseq [bad ["personid" "householdid" "individualid" "citizenid" "ssn" "taxid" "beneficiaryid"]]
         (is (not (contains? ks bad))
             (str "G9: " lname " must not carry a '" bad "' field (narashi is aggregate-only)"))))))
@@ -159,7 +159,7 @@
 
 (deftest test-g2-no-competing-store-fields
   (doseq [lname all-lexicon-names]
-    (let [ks (set (map (comp str/lower-case name) (property-keys (lex lname))))]
+    (let [ks (set (map (comp str/lower name) (property-keys (lex lname))))]
       (doseq [bad ["postgrestable" "risingwaveview" "lanceindex" "duckdbtable" "sqlitetable"]]
         (is (not (contains? ks bad))
             (str "G2: " lname " must not carry a '" bad "' field (kotoba EAVT is the sole store)"))))))

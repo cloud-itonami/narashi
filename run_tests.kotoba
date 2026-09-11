@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; narashi — standalone bb test runner.
 (require '[clojure.test :as test])
 

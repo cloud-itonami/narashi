@@ -57,10 +57,10 @@ The EDN files are authoritative; Markdown only describes how to find them.
 ## Run
 
 ```bash
-nbb scripts/run-task.cljs test
+kbb --backend sci scripts/run-task.cljk test
 ```
 
-(`bb test` until 2026-07-17; babashka was retired as this workspace's script
+(`kbb -M:test` until 2026-07-17; babashka was retired as this workspace's script
 host by ADR-2607173000. The task is in `scripts/tasks.edn` — 16 tests /
 121 assertions, 0 failures, measured 2026-08-13.)
 

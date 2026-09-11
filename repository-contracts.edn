@@ -5,6 +5,6 @@
   :repository/west-path "orgs/etzhayyim/com-etzhayyim-narashi"
   :repository/legacy-path "20-actors/narashi"
   :repository/runtime :babashka
-  :repository/test-command "bb test"
+  :repository/test-command "kbb -M:test"
   :repository/external-wire-formats #{:did-json}
   :repository/external-dependencies []}]

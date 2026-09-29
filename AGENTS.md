@@ -1,7 +1,7 @@
-# 20-actors/narashi — CLAUDE.md
+# 20-actors/narashi — AGENTS.md
 
 > World economic-inequality-indicator observation substrate. Tier-B, R0 design-only. ADR-2607101800.
-> Read the `etzhayyim/root` repo-root `CLAUDE.md` first; this file only adds actor-local rules.
+> Read the `etzhayyim/root` repo-root `AGENTS.md` first; this file only adds actor-local rules.
 
 ## Identity
 
@@ -86,4 +86,4 @@ kbb --backend sci scripts/run-task.cljk test
   boundary this actor does not cross)
 - `/90-docs/adr/2605302300-kanae-global-fiscal-flow-visualization-tier-b-actor-r0.md` — kanae (primary
   cross-reference peer)
-- `/CLAUDE.md` (in `etzhayyim/root`) — Religious-corp status table
+- `/AGENTS.md` (in `etzhayyim/root`) — Religious-corp status table

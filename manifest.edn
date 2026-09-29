@@ -33,7 +33,7 @@
  [{"phase" "R0",
    "date" "2026-07-10",
    "scope"
-   "Scaffold only. 3 cells path-reserved. 4 Lexicon skeletons. manifest + README + CLAUDE.md + constitutional-gate test.",
+   "Scaffold only. 3 cells path-reserved. 4 Lexicon skeletons. manifest + README + AGENTS.md + constitutional-gate test.",
    "murakumoFleet" "No deployment",
    "gate" "ADR-2607101800 (PROPOSED)"}
   {"phase" "R1",
